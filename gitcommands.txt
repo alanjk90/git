@@ -1,0 +1,31 @@
+
+
+1. Install git on ubuntu 18.4:
+$ apt-get update    # update all the pakages to its latest version.
+$ apt-get install git   # install git on ubuntu
+
+create git directory
+
+mkdir test
+$cd test
+$vi s1   # add file call s1 and add few data
+$git init   #initialize the git directory
+
+Configure git user name and email:
+------------------
+
+git config --global user.name
+git config --global user.email
+
+
+To show the confirg list
+-------------------------
+
+git config --list
+
+$git status   #tells us how things stand in our working tree and how its working.
+$git add      #make our untracked file to track file
+
+
+
+
