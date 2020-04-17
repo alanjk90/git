@@ -25,7 +25,7 @@ git config --list
 
 $git status   #tells us how things stand in our working tree and how its working.
 $git add      #make our untracked file to track file
-
+#git commit -m "mesage"  # command to commint the git changes
 
 
 
