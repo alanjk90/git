@@ -52,7 +52,8 @@ $git checkout <9nh34> -- <file name>    # restore file from the commit <9nh34> <
 
 Git ignore file
 -----------------
-
+$vi .gitignore
+# we can add files and folders inside this .gitignore file. So git will ignore those files.
 
 
 
