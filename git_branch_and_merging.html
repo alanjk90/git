@@ -20,8 +20,19 @@ $git branch SDN   # creating brach called SDN
 
 Checkout and work on branches.
 ------------------------------
-$git checkout SDN
-DN
+$git checkout SDN   #switching to SDN branch
+
+Merging branch
+-------------
+got to master branch and run below command.
+
+$git merge SDN  #we need to run this command after switching to master branch. Befor that we need to update staging file and commit all the changes made in SDN branch.
+
+
+Delete Branch
+-------------
+$git branch -d SDN  # deleting SDN (Run this from Master branch. Before removing this SDN branch merge the same to master branch.)
+
 
 
 
