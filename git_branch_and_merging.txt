@@ -20,7 +20,6 @@ $git branch SDN   # creating brach called SDN
 
 Checkout and work on branches.
 ------------------------------
-
 $git checkout SDN
 
 
