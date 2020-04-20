@@ -1,11 +1,13 @@
+>>Working tree --> 1st file we created and changes amade initaily.
 
+>>taging area --> all the commited files are string in staging area.
 
 1. Install git on ubuntu 18.4:
 $ apt-get update    # update all the pakages to its latest version.
 $ apt-get install git   # install git on ubuntu
 
 create git directory
-
+-------------------
 mkdir test
 $cd test
 $vi s1   # add file call s1 and add few data
@@ -18,14 +20,18 @@ git config --global user.name
 git config --global user.email
 
 
-To show the confirg list
+To show the config list
 -------------------------
 
 git config --list
 
 $git status   #tells us how things stand in our working tree and how its working.
-$git add      #make our untracked file to track file
-#git commit -m "mesage"  # command to commint the git changes
+$git add      #make our untracked file to track file. Adding file to staging area.
+#git commit -m "mesage"  # command to commint the git changes, we save a verion of file chages at this point.
 
+#git diff   #shows the diffrence between tracked file, working file and staging area.
 
+git add .  # update all new and modifyed files to our staging area.
+git add S*  #same effect as above
+git checkout <filenme>   #restore files from stanging area to working tree.
 
