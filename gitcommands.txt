@@ -46,5 +46,37 @@ $git checkout -- file name   #replace file from staging area  to working tree
 Undo staging of file
 ---------------------
 $git reset HEAD <file name>  #undo the file from most recent commit to "staging area" not to working tree.
+$git log -- <file name>   #disply all the commit effected to the file <file name>
+$git checkout <9nh34> -- <file name>    # restore file from the commit <9nh34> <commit code>.
 
-test
+
+Git ignore file
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
