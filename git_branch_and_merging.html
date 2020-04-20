@@ -27,13 +27,15 @@ Merging branch
 got to master branch and run below command.
 
 $git merge SDN  #we need to run this command after switching to master branch. Befor that we need to update staging file and commit all the changes made in SDN branch.
-
+git branch --merged  #will confirm the merging.
 
 Delete Branch
 -------------
 $git branch -d SDN  # deleting SDN (Run this from Master branch. Before removing this SDN branch merge the same to master branch.)
+$git brach -D SDN  #this will forcefully delete the branch witout any warning. If the brach is not merged wit master, we will lose our data.
 
-
+Merage Conflicts
+----------------
 
 
 
