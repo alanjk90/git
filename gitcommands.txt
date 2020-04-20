@@ -1,6 +1,6 @@
 >>Working tree --> 1st file we created and changes amade initaily.
 
->>taging area --> all the commited files are string in staging area.
+>>Staging area --> all the commited files are string in staging area.
 
 1. Install git on ubuntu 18.4:
 $ apt-get update    # update all the pakages to its latest version.
@@ -34,4 +34,15 @@ $git add      #make our untracked file to track file. Adding file to staging are
 git add .  # update all new and modifyed files to our staging area.
 git add S*  #same effect as above
 git checkout <filenme>   #restore files from stanging area to working tree.
+git diff --staged   #Showing the diffrence between Staged file and last commit (it shows what we are about to commit)
+
+
+Remove a file from repo
+------------------------
+
+$git rm <file name>  # Remove a file from working tree and staging tree.
+$git checkout -- file nme   #replace file from staging area to working tree
+
+
+
 
