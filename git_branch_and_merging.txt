@@ -1,0 +1,29 @@
+First and git default branch is call "master".
+
+#start a new git repo
+$git init
+
+$git add s1  #stage s1 file
+$git commit -m "message"
+
+Git Branchs
+-----------
+#branch is allowed to work on diffrent version of same file as in parallel. Example: we can have a producation branch and development branch for same project.
+$git log --all --decorate --oneline --graph    #shows commit history as a graph
+alias graph="git log --all --decorate --oneline --graph"   #setup alias to "graph"
+
+
+create new branches
+-------------------
+$git branch <branch neame>
+$git branch SDN   # creating brach called SDN
+
+Checkout and work on branches.
+------------------------------
+
+$git checkout SDN
+
+
+
+
+
