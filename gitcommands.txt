@@ -41,8 +41,10 @@ Remove a file from repo
 ------------------------
 
 $git rm <file name>  # Remove a file from working tree and staging tree.
-$git checkout -- file nme   #replace file from staging area to working tree
+$git checkout -- file name   #replace file from staging area  to working tree
 
+Undo staging of file
+---------------------
+$git reset HEAD <file name>  #undo the file from most recent commit to "staging area" not to working tree.
 
-
-
+test
