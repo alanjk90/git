@@ -13,7 +13,7 @@ $git log --all --decorate --oneline --graph    #shows commit history as a graph
 alias graph="git log --all --decorate --oneline --graph"   #setup alias to "graph"
 
 
-create new branches
+Create new branches
 -------------------
 $git branch <branch neame>
 $git branch SDN   # creating brach called SDN
@@ -36,6 +36,25 @@ $git brach -D SDN  #this will forcefully delete the branch witout any warning. I
 
 Merage Conflicts
 ----------------
+merage conflicts happen when we try to merge branches that has change the same line in the same file.
+$git checkout -b dev  #this commands creates the dev brach and checkout the same. 
+$git dev merge dev
 
+
+Detached HEAD state
+--------------------
+#usually HEAD points to a branch which turn points to a commit. When HEAD is instead pointing directly to a commit, we have a detached HEAD state.
+$git checkout <5 commit hash value>   # In this case the head will detach from the branch and point to exact commit.
+$git checkout <branch name>   # now we point the HEAD to <brach name>
+
+Git stash
+----------
+#With git stash "Git has saved our new changes to the file, so we can apply them back later".
+$git stash    #save all the changes on the files, so we can later add that to staging area.
+$it stash list  #display all the stash we made.
+$git stash list -p  #we can observe the edits that occured with each stash point.
+$git stash apply  #re-apply the most recent stash. after that we need to perform "git add ." then commit.
+$git stash apply <label> # Re-apply the label stash.
+$git stash save "messahe" #we can stash with a message
 
 
