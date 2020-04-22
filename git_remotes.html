@@ -1,5 +1,5 @@
 #Git clone
-#-------
+-------
 $git colne <clone loaction>   # this command clones the git to our local system.
 
 $ git config --local user.name "user name"
@@ -7,18 +7,36 @@ $git config --local user.mailid "emial@ID"
 
 
 #Git remotes
-#----------
-#git remote  #disply the remotes (origin is the default remote of git)
-git remote -v #shows the detailed remote output
+----------
+$git remote  #disply the remotes (origin is the default remote of git)
+$git remote -v #shows the detailed remote output
 
 $git log --all --decorate --oneline -graph   #shows the graph
 
 
-git fetch and git merge
+#git fetch and git merge
 ------------------------
 
 $git fetch origin  #fetch all the updates from remote repo to local repo.
 $git merge origin/master   #integrate changed to our local master branch.
 
+$git pull 
 
+Git push
+--------
+$git push origin master  #push chnges to remote repo
+
+Create a github fork
+--------------------
+#Fork meanse clone another public repo to a our github account.
+#after making the fork we need to clone the repo to local system
+
+$git clone <remote repo_path.git>
+$git remote -v   #check fetch and push path is correct
+
+
+Add a git remote:
+-----------------
+git remote add <remote name>
+git remote remove <remote name>
 
